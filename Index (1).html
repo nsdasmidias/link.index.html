@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portal de Vídeos</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px; background-color: #f4f4f4; }
+        header { text-align: center; padding-bottom: 20px; }
+        .video-container { background: #fff; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); margin-bottom: 20px; }
+        video { width: 100%; border-radius: 4px; }
+        h2 { color: #333; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galeria de Vídeos</h1>
+        <p>Assista aos meus conteúdos favoritos abaixo.</p>
+    </header>
+
+    <main>
+        <section class="video-container">
+            <h2>Vídeo Local</h2>
+            <video controls poster="miniatura.jpg">
+                <source src="seu-video.mp4" type="video/mp4">
+                Seu navegador não suporta vídeos em HTML5.
+            </video>
+            <p>Este vídeo está sendo carregado diretamente do seu servidor/computador.</p>
+        </section>
+
+        <section class="video-container">
+            <h2>Vídeo do YouTube</h2>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+            <p>Para vídeos do YouTube, usamos o código de incorporação (iframe).</p>
+        </section>
+    </main>
+
+</body>
+</html>
